@@ -1,0 +1,320 @@
+@import "_header";
+@import "_footer";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+/*Scrollbar*/
+body::-webkit-scrollbar{
+    width: 15px;
+    border-radius: 30px;
+}
+body::-webkit-scrollbar-track{
+    background: #2c2b36;
+}
+body::-webkit-scrollbar-thumb{
+    background: #e48f8f;
+    border-radius: 30px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: #e96565;
+    box-shadow: black 0 0px 20px;
+}
+body::-webkit-scrollbar-corner{
+    background: white;
+}
+main{
+    min-height: 100vh;
+    background: url('../../images/kategorie-pozadie-2.webp')rgba(19, 6, 63, 0.781);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.desktop-add{
+    //background: white;
+}
+.mobile-add {
+    display: none;
+}
+.header-footer-add{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.classic-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.side-add{
+    width: 10%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.change{
+    color: #e96565;
+    font-size: 30px;
+}
+.line{
+    text-indent: -999999px;
+    display: block;
+    background: #e96565;
+    height: 3px;
+    width: 80%;
+    margin: 15px auto
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 30px;
+        width: 70%;
+        text-align: center;
+    }
+}
+.change-blocks-links{
+    display: flex;
+    justify-content: center;
+    li {
+        cursor: pointer;
+    }
+    li:hover {
+        color: #e96565;
+    }
+    li:first-child{
+        color: #e96565;
+        text-shadow: #e48f8f 0 0 10px;
+    }
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        margin: 15px;
+    }
+}
+a{
+    text-decoration: none;
+    font-size: 30px;
+}
+a:hover {
+    color: #e96565;
+}
+
+//SEARCH 
+.seacrhBlock {
+    min-height:100vh;
+    text-align: center;
+    position: relative;
+    z-index: 900;
+}
+.seacrhBlock h2{
+    margin: 0 auto;
+    width: 800px;
+    padding: 15px;
+    color: white;
+}
+.skuste{
+    margin: 0 auto;
+    width: 800px;
+    padding: 15px;
+    color: white;
+}
+.seacrhBlock a{
+    color: #e96565;
+}
+.seacrhBlock img{
+    display: block;
+    width: 210px;
+    height: 300px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.change{
+    color: #e96565;
+}
+.searchResults{
+    width: 1000px;
+    margin: auto;
+}
+.srchMovie{
+    min-width: 290px;
+    height: 430px;
+    font-size: 25px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    vertical-align: top;
+}
+.report-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    input {
+        background: rgba(0, 0, 0, 0.171);
+        border: #e96565 solid 3px;
+        width: 100%;
+        padding: 15px;
+        outline: none;
+        margin: 15px;
+    }
+    input:focus{
+        background: rgba(0, 0, 0, 0.555);
+    }
+    button{
+        width: 200px;
+        padding: 10px;
+        font-size: 35px;
+        background: rgba(0, 0, 0, 0.096);
+        border: #e96565 solid 3px;
+        cursor: pointer;
+    }
+    button:hover{
+        background: rgba(0, 0, 0, 0.555);
+    }
+}
+.show_more_btn{
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    font-size: 35px;
+    background: rgba(0, 0, 0, 0.096);
+    border: #e96565 solid 3px;
+    cursor: pointer;
+}
+button:hover{
+    background: rgba(0, 0, 0, 0.555);
+}
+/*AKO pozerat*/
+.image-ako-pozerat{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+    width: 70%;
+    height: 10%;
+    box-shadow: 0 0 20px;
+}
+.image-1{
+    background-image: url("https://online-kino.online/images/vyber-film.webp");
+}
+.image-2{
+    background-image: url("https://online-kino.online//images/klik-film.webp");
+}
+.image-3{
+    background-image: url("https://online-kino.online/images/zavret-okno.webp");
+}
+.image-4{
+    background-image: url("https://online-kino.online/images/pozeraj.webp");
+}
+.kroky{
+    width: 275px;
+    font-size: 15px;
+    color: white;
+    margin: 15px auto;
+}
+.warning{
+    color: #e96565;
+}
+
+@media only screen and (max-width: 1000px) {
+    .desktop-add{
+        display: none;
+    }
+    .mobile-add {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 10px;
+    }
+    main{
+        align-items: center;
+    }
+    .content{
+        width: 100%;
+        h1 {
+            font-size: 30px;
+        }
+        h2{
+            font-size: 25px;
+        }
+        p {
+            font-size:15px;
+        }
+        .change {
+            font-size: 15px;
+        }
+    }
+    ul {
+        a{
+            font-size: 25px;
+        }
+    }
+    .change-blocks-links{
+        li {
+            font-size: 20px;
+        }
+    }
+
+    //SEARCH
+    .seacrhBlock {
+        min-height:100vh;
+        background: #17171d;
+        text-align: center;
+    }
+    .seacrhBlock h2{
+        margin: 0 auto;
+        width: 300px;
+        padding: 15px;
+        color: white;
+    }
+    .skuste{
+        margin: 0 auto;
+        width: 300px;
+        padding: 15px;
+        color: white;
+    }
+    .seacrhBlock a{
+        color: #e96565;
+    }
+    .seacrhBlock img{
+        display: block;
+        width: 105px;
+        height: 150px;
+        margin: 10px auto;
+    }
+    .change{
+        color: #e96565;
+    }
+    .searchResults{
+        width: 350px;
+        margin: auto;
+    }
+    .srchMovie{
+        width: 145px;
+        height: 215px;
+        font-size: 15px;
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "My Protected Area"
+AuthUserFile /home/u629394730/domains/online-kino.online/public_html/adminonly/.htpasswd
+Require valid-user

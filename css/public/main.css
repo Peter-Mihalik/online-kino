@@ -1,0 +1,586 @@
+header {
+  background: #2c2b36;
+  height: 80px;
+  border-bottom: #e96565 3px solid;
+  z-index: 1000;
+}
+
+header button:hover {
+  background: #e96565;
+}
+
+.logo {
+  display: inline-block;
+  background-image: url(../../images/Vstupenka-2.png);
+  width: 150px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 50px;
+}
+
+header form {
+  display: inline-block;
+  float: right;
+  height: 60px;
+  margin: 20px 20px 0 20px;
+}
+
+.search_mobile {
+  display: none;
+}
+
+.search_desktop {
+  display: inline-block;
+  font-size: 30px;
+  height: 40px;
+  width: 200px;
+  border-radius: 25px;
+  border: #2c2b36 1px solid;
+  color: #2c2b36;
+  padding: 20px;
+}
+
+.submit_search_mobile {
+  display: none;
+}
+
+.submit_search_desktop {
+  font-size: 25px;
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+  border: none;
+  background: #e96565;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.resultsDesktop {
+  position: absolute;
+  right: 123px;
+  z-index: 1000;
+  top: -20px;
+  /*float: right;*/
+  display: none;
+  width: 400px;
+  background: #e96565;
+  min-height: 150px;
+  /*margin-top: -20px;
+    margin-right: 123px;*/
+  border-radius: 0px 0px 20px 20px;
+}
+
+.result-movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: solid #2c2b36 3px;
+}
+
+.result-movie a {
+  color: #2c2b36;
+  text-decoration: none;
+}
+
+.result-movie a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+    background: #2c2b36;
+    height: 60px;
+    border-bottom: #e96565 3px solid;
+    z-index: 1000;
+  }
+  header input {
+    outline: none;
+  }
+  .logo {
+    display: inline-block;
+    width: 125px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0px 10px;
+  }
+  header form {
+    display: inline-block;
+    float: right;
+    height: 40px;
+    margin: 10px;
+  }
+  .search_desktop {
+    display: none;
+  }
+  .search_mobile {
+    display: inline-block;
+    font-size: 15px;
+    height: 30px;
+    width: 115px;
+    border-radius: 25px;
+    border: #2c2b36 1px solid;
+    color: #2c2b36;
+    padding: 5px;
+  }
+  .submit_search_desktop {
+    display: none;
+  }
+  .submit_search_mobile {
+    font-size: 15px;
+    display: none;
+    height: 30px;
+    width: 75px;
+    border: none;
+    background: #e96565;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .resultsDesktop {
+    display: none;
+  }
+}
+
+footer {
+  border-top: e96565 3px solid;
+  background: #2c2b36;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h2 {
+  font-size: 45px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  footer h2 {
+    font-size: 35px;
+  }
+  footer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+/*Scrollbar*/
+body::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 30px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #2c2b36;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #e48f8f;
+  border-radius: 30px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #e96565;
+  -webkit-box-shadow: black 0 0px 20px;
+          box-shadow: black 0 0px 20px;
+}
+
+body::-webkit-scrollbar-corner {
+  background: white;
+}
+
+main {
+  min-height: 100vh;
+  background: url("../../images/kategorie-pozadie-2.webp") rgba(19, 6, 63, 0.781);
+  background-blend-mode: multiply;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.mobile-add {
+  display: none;
+}
+
+.header-footer-add {
+  width: 100%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 0;
+}
+
+.classic-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side-add {
+  width: 10%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.change {
+  color: #e96565;
+  font-size: 30px;
+}
+
+.line {
+  text-indent: -999999px;
+  display: block;
+  background: #e96565;
+  height: 3px;
+  width: 80%;
+  margin: 15px auto;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.content h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 40px;
+}
+
+.content p {
+  font-size: 30px;
+  width: 70%;
+  text-align: center;
+}
+
+.change-blocks-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.change-blocks-links li {
+  cursor: pointer;
+}
+
+.change-blocks-links li:hover {
+  color: #e96565;
+}
+
+.change-blocks-links li:first-child {
+  color: #e96565;
+  text-shadow: #e48f8f 0 0 10px;
+}
+
+ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+ul li {
+  margin: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+a:hover {
+  color: #e96565;
+}
+
+.seacrhBlock {
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  z-index: 900;
+}
+
+.seacrhBlock h2 {
+  margin: 0 auto;
+  width: 800px;
+  padding: 15px;
+  color: white;
+}
+
+.skuste {
+  margin: 0 auto;
+  width: 800px;
+  padding: 15px;
+  color: white;
+}
+
+.seacrhBlock a {
+  color: #e96565;
+}
+
+.seacrhBlock img {
+  display: block;
+  width: 210px;
+  height: 300px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.change {
+  color: #e96565;
+}
+
+.searchResults {
+  width: 1000px;
+  margin: auto;
+}
+
+.srchMovie {
+  min-width: 290px;
+  height: 430px;
+  font-size: 25px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.report-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+}
+
+.report-form input {
+  background: rgba(0, 0, 0, 0.171);
+  border: #e96565 solid 3px;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  margin: 15px;
+}
+
+.report-form input:focus {
+  background: rgba(0, 0, 0, 0.555);
+}
+
+.report-form button {
+  width: 200px;
+  padding: 10px;
+  font-size: 35px;
+  background: rgba(0, 0, 0, 0.096);
+  border: #e96565 solid 3px;
+  cursor: pointer;
+}
+
+.report-form button:hover {
+  background: rgba(0, 0, 0, 0.555);
+}
+
+.show_more_btn {
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+  font-size: 35px;
+  background: rgba(0, 0, 0, 0.096);
+  border: #e96565 solid 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.555);
+}
+
+/*AKO pozerat*/
+.image-ako-pozerat {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 20px auto;
+  width: 70%;
+  height: 10%;
+  -webkit-box-shadow: 0 0 20px;
+          box-shadow: 0 0 20px;
+}
+
+.image-1 {
+  background-image: url("https://online-kino.online/images/vyber-film.webp");
+}
+
+.image-2 {
+  background-image: url("https://online-kino.online//images/klik-film.webp");
+}
+
+.image-3 {
+  background-image: url("https://online-kino.online/images/zavret-okno.webp");
+}
+
+.image-4 {
+  background-image: url("https://online-kino.online/images/pozeraj.webp");
+}
+
+.kroky {
+  width: 275px;
+  font-size: 15px;
+  color: white;
+  margin: 15px auto;
+}
+
+.warning {
+  color: #e96565;
+}
+
+@media only screen and (max-width: 1000px) {
+  .desktop-add {
+    display: none;
+  }
+  .mobile-add {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 10px;
+  }
+  main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content {
+    width: 100%;
+  }
+  .content h1 {
+    font-size: 30px;
+  }
+  .content h2 {
+    font-size: 25px;
+  }
+  .content p {
+    font-size: 15px;
+  }
+  .content .change {
+    font-size: 15px;
+  }
+  ul a {
+    font-size: 25px;
+  }
+  .change-blocks-links li {
+    font-size: 20px;
+  }
+  .seacrhBlock {
+    min-height: 100vh;
+    background: #17171d;
+    text-align: center;
+  }
+  .seacrhBlock h2 {
+    margin: 0 auto;
+    width: 300px;
+    padding: 15px;
+    color: white;
+  }
+  .skuste {
+    margin: 0 auto;
+    width: 300px;
+    padding: 15px;
+    color: white;
+  }
+  .seacrhBlock a {
+    color: #e96565;
+  }
+  .seacrhBlock img {
+    display: block;
+    width: 105px;
+    height: 150px;
+    margin: 10px auto;
+  }
+  .change {
+    color: #e96565;
+  }
+  .searchResults {
+    width: 350px;
+    margin: auto;
+  }
+  .srchMovie {
+    width: 145px;
+    height: 215px;
+    font-size: 15px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,44 @@
+.blockVyber{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.najMovie{
+    min-width: 145px;
+    min-height: 215px;
+    font-size: 15px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    vertical-align: top;
+    h3 {
+        font-size: 20px;
+        width: 200px;
+        text-align: center;
+    }
+}
+.najMovie img{
+    display: block;
+    width: 125px;
+    height: 170px;
+    margin: 10px auto;
+}
+.categories{
+    ul {
+        justify-content: center;
+       // flex-direction: column;
+        button{
+            width: 200px;
+            padding: 10px;
+            font-size: 35px;
+            background: rgba(0, 0, 0, 0.096);
+            border: #e96565 solid 3px;
+            cursor: pointer;
+        }
+        button:hover{
+            color: #e96565;
+        }
+    }
+}
+

@@ -1,0 +1,136 @@
+header{
+    background: #2c2b36;
+    height: 80px;
+    border-bottom: #e96565 3px solid;
+    z-index: 1000;
+    button:hover{
+        background:#e96565;
+    }
+}
+.logo{
+    display: inline-block;
+    background-image:url(../../images/Vstupenka-2.png);
+    width: 150px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 50px;
+}
+header form{
+    display: inline-block;
+    float: right;
+    height: 60px;
+    margin: 20px 20px 0 20px;
+}
+.search_mobile{
+    display: none;
+}
+.search_desktop{
+    display: inline-block;
+    font-size: 30px;
+    height: 40px;
+    width: 200px;
+    border-radius: 25px;
+    border: #2c2b36 1px solid;
+    color: #2c2b36;
+    padding: 20px;
+}
+.submit_search_mobile{
+    display: none;
+}
+.submit_search_desktop{
+    font-size: 25px;
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    border: none;
+    background: #e96565;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.resultsDesktop{
+    position: absolute;
+    right: 123px;
+    z-index: 1000;
+    top: -20px;
+    /*float: right;*/
+    display: none;
+    width: 400px;
+    background: #e96565;
+    min-height: 150px;
+    /*margin-top: -20px;
+    margin-right: 123px;*/
+    border-radius: 0px 0px 20px 20px;
+}
+.result-movie{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: solid #2c2b36 3px;
+}
+.result-movie a{
+    color:  #2c2b36;
+    text-decoration: none;
+}
+.result-movie a:hover{
+    color:  white;
+}
+
+@media only screen and (max-width: 1000px) {
+    header{
+        background: #2c2b36;
+        height: 60px;
+        border-bottom: #e96565 3px solid;
+        z-index: 1000;
+        input {
+            outline: none;
+        }
+    }
+    .logo{
+        display: inline-block;
+        width: 125px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 0px 10px;
+    }
+    header form{
+        display: inline-block;
+        float: right;
+        height: 40px;
+        margin: 10px;
+    }
+    .search_desktop{
+        display: none;
+    }
+    .search_mobile{
+        display: inline-block;
+        font-size: 15px;
+        height: 30px;
+        width: 115px;
+        border-radius: 25px;
+        border: #2c2b36 1px solid;
+        color: #2c2b36;
+        padding: 5px;
+    }
+    .submit_search_desktop{
+        display: none;
+    }
+    .submit_search_mobile{
+        font-size: 15px;
+        display: none;
+        height: 30px;
+        width: 75px;
+        border: none;
+        background: #e96565;
+        color: white;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    .resultsDesktop{
+        display: none;
+    }
+}

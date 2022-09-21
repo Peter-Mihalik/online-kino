@@ -1,0 +1,30 @@
+.categoriesMoviesBlock{
+    width: 100%;
+    text-align: center;
+}
+.categoriesMovie{
+    width: 290px;
+    height: 430px;
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+}
+.categoriesBlock a{
+    text-decoration: none;
+    color: #e96565;
+}
+.categoriesMovie img{
+    display: block;
+    width: 210px;
+    height: 300px;
+    margin: 10px auto;
+}
+.categoriesMovie h3{
+    margin: 0;
+    width: 100%;
+}
+p {
+    width: 70%;
+    margin: 10px auto;
+}

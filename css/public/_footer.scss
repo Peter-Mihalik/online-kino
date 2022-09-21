@@ -1,0 +1,23 @@
+footer{
+    border-top: e96565 3px solid;
+    background:#2c2b36;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 45px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    footer {
+        h2 {
+            font-size: 35px;
+        }
+        ul {
+            justify-content: center;
+        }
+    }
+}
